@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="Just Quiz"
+            android:textSize="32sp"/>
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="Question 1"/>
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="What does XML stand for?"/>
+        <EditText
+            android:id="@+id/answer_field"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter your response"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="Question 2"/>
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="The return type of the method getText() is String: Yes or No?"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:id="@+id/yes_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="Question 3"/>
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="Choose all view(s) which this app includes."/>
+        <CheckBox
+            android:id="@+id/text_view_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="TextView"/>
+        <CheckBox
+            android:id="@+id/image_view_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ImageView"/>
+        <CheckBox
+            android:id="@+id/button_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Button"/>
+        <CheckBox
+            android:id="@+id/check_box_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CheckBox"/>
+        <CheckBox
+            android:id="@+id/edit_text_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="EditText"/>
+        <CheckBox
+            android:id="@+id/linear_layout_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="LinearLayout"/>
+        <CheckBox
+            android:id="@+id/relative_layout_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="RelativeLayout"/>
+        <CheckBox
+            android:id="@+id/scroll_view_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ScrollView"/>
+        <CheckBox
+            android:id="@+id/radio_button_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="RadioButton"/>
+        <CheckBox
+            android:id="@+id/radio_group_check_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="RadioGroup"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="submit"
+            android:background="#E91E63"
+            android:layout_marginTop="16dp"
+            android:onClick="displayScore"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
